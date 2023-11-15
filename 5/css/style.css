@@ -212,6 +212,14 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background-image: url("../img/back-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.go-main-text {
+  position: relative;
+  left: 52px;
 }
 
 .page-logo {
@@ -249,6 +257,25 @@ body {
   margin-right: 25px;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.background-intro {
+  background-image: url("../img/intro.jpg");
+}
+
+.background-html {
+  background-image: url("../img/basic-html.jpg");
+}
+
+.background-css {
+  background-image: url("../img/basic-css.jpg");
+}
+
+.background-layout {
+  background-image: url("../img/layout.jpg");
 }
 
 .module-card:nth-child(2n) {
@@ -268,6 +295,8 @@ body {
 }
 
 .module-card-content {
+  position: relative;
+  top: 180px;
   padding: 25px 25px;
   width: 100%;
 }
