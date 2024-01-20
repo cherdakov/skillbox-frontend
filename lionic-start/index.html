@@ -5,52 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lionic</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container flex">
             <a href="#" class="header-logo">
                 <img src="img/logo.svg" class="header-logo" alt="Logo">
             </a>
-        </div>
-        <nav class="header-nav">
-            <ul class="header-list">
-                <li class="header-list-item">
-                    <a href="#hero" class="header-link">
-                        Home
-                    </a>
-                </li>
-                <li class="header-list-item">
-                    <a href="#services" class="header-link">
-                        Services
-                    </a>
-                </li>
-                <li class="header-list-item">
-                    <a href="#articles" class="header-link">
-                        Articles
-                    </a>
-                </li>
-                <li class="header-list-item">
-                    <a href="#clients" class="header-link">
-                        Clients
-                    </a>
-                </li>
-                <li class="header-list-item">
-                    <a href="#contact" class="header-link">
-                        Contacts
-                    </a>
-                </li>
-                <li class="header-list-item">
-                    <a href="#join-us" class="header-link">
-                        Join Us
-                    </a>
-                </li>
-            </ul>
-            <button class="btn header-btn">
+            <nav class="header-nav">
+                <ul class="list-reset header-list flex">
+                    <li class="header-list-item">
+                        <a href="#hero" class="header-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#services" class="header-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#articles" class="header-link">
+                            Articles
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#clients" class="header-link">
+                            Clients
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#contact" class="header-link">
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#join-us" class="header-link">
+                            Join Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-reset btn header-btn">
                 Free trial
             </button>
-        </nav>
+        </div>
     </header>
 
     <main class="main">
@@ -63,7 +65,7 @@
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                     ut&nbsp;laoreet dolore.
                 </p>
-                <button class="btn hero-btn">
+                <button class="btn-reset btn hero-btn">
                     FREE 30&nbsp;DAY TRIAL
                 </button>
                 <span class="hero-secure">
@@ -72,7 +74,7 @@
             </div>
 
         </section>
-        <section id="services" class="services">
+        <section id="services" class="services section-offset">
             <div class="container">
                 <h2 class="section-title services-title">
                     Services
@@ -80,7 +82,7 @@
                 <p class="section-desc services-desc">
                     Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your end-of-life plans.
                 </p>
-                <ul class="services-items">
+                <ul class="list-reset services-items">
                     <li class="services-item">
                         <svg width="68" height="66" viewBox="0 0 68 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -136,12 +138,12 @@
                 </ul>
             </div>
         </section>
-        <section id="articles" class="articles">
+        <section id="articles" class="articles section-offset">
             <div class="container">
                 <h2 class="section-title articles title">
                     Articles
                 </h2>
-                <ul class="articles-list">
+                <ul class="list-reset articles-list">
                     <li class="articles-item">
                         <article class="blog-preview">
                             <img src="img/blog-1.jpg" alt="Blog photo 1" class="blog-preview-image">
@@ -213,72 +215,82 @@
                 </ul>
             </div>
         </section>
-        <section id="clients" class="clients">
-            <h2 class="section-title client-title">
-                Clients
-            </h2>
-            <ul class="clients-list">
-                <li class="clients-item">
-                    <p class="clients-item-desc">
-                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.
-                    </p>
-                    <div class="clients-user">
-                        <div class="client-avatar">
-                            <img src="img/client-1.jpg" alt="John Armstrong" class="">
-                        </div>
-                    </div><div class="clients-text">
-                        <div class="clients-name">
-                            John Armstrong
-                        </div>
-                        <div class="clients-post">
-                            Customer
-                        </div>
-                    </div>
-                </li>
-                <li class="clients-item">
-                    <p class="clients-item-desc">
-                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.
-                    </p>
-                    <div class="clients-user">
-                        <div class="client-avatar">
-                            <img src="img/client-2.jpg" alt="Elizabeth Martin" class="">
-                        </div>
-                    </div><div class="clients-text">
-                        <div class="clients-name">
-                            Elizabeth Martin
-                        </div>
-                        <div class="clients-post">
-                            Customer
-                        </div>
-                    </div>
-                </li>
-                <li class="clients-item">
-                    <p class="clients-item-desc">
-                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.
-                    </p>
-                    <div class="clients-user">
-                        <div class="client-avatar">
-                            <img src="img/client-3.jpg" alt="Robin Soutby" class="">
+        <section id="clients" class="clients section-offset">
+            <div class="container">
+                <h2 class="section-title client-title">
+                    Clients
+                </h2>
+                <ul class="list-reset clients-list">
+                    <li class="clients-item">
+                        <p class="clients-item-desc">
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit odio dignissim qui blandit molestie consequat.
+                        </p>
+                        <div class="clients-user">
+                            <div class="client-avatar">
+                                <img src="img/client-1.jpg" alt="John Armstrong" class="">
+                            </div>
                         </div>
                         <div class="clients-text">
                             <div class="clients-name">
-                                Robin Soutby
+                                John Armstrong
                             </div>
                             <div class="clients-post">
                                 Customer
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li class="clients-item">
+                        <p class="clients-item-desc">
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit odio dignissim qui blandit molestie consequat.
+                        </p>
+                        <div class="clients-user">
+                            <div class="client-avatar">
+                                <img src="img/client-2.jpg" alt="Elizabeth Martin" class="">
+                            </div>
+                        </div>
+                        <div class="clients-text">
+                            <div class="clients-name">
+                                Elizabeth Martin
+                            </div>
+                            <div class="clients-post">
+                                Customer
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clients-item">
+                        <p class="clients-item-desc">
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit odio dignissim qui blandit molestie consequat.
+                        </p>
+                        <div class="clients-user">
+                            <div class="client-avatar">
+                                <img src="img/client-3.jpg" alt="Robin Soutby" class="">
+                            </div>
+                            <div class="clients-text">
+                                <div class="clients-name">
+                                    Robin Soutby
+                                </div>
+                                <div class="clients-post">
+                                    Customer
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section id="contacts" class="contacts">
+        <section id="contacts" class="contacts section-offset">
             <div class="container">
                 <h2 class="section-title contacts-title">
                     Contacts
                 </h2>
                 <address class="contacts-address">
-                    <ul class="contacts-list">
+                    <ul class="list-reset contacts-list">
                         <li class="contacts-item">
                             <strong class="contacts-item-caption">
                                 Visit Us
