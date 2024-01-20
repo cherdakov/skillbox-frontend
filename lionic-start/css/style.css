@@ -80,7 +80,7 @@ body {
 
 /* hero */
 .hero {
- padding: 100px 0;
+  padding: 100px 0;
 }
 
 .hero-content {
@@ -137,4 +137,76 @@ body {
 .services-item-desc {
   margin: 0;
   text-align: center;
+}
+
+/* articles */
+
+.articles-list {
+  flex-wrap: wrap;
+}
+
+.articles-item {
+  width: 570px;
+  outline: auto;
+  margin-bottom: 30px;
+}
+
+.articles-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+.blog-preview-image {
+  object-fit: cover;
+}
+
+.blog-preview-text {
+  padding: 30px;
+}
+
+.blog-preview-time {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.blog-preview-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.blog-preview-desc {
+  margin: 0;
+}
+
+/* clients */
+
+.clients-item {
+  flex-direction: column;
+  width: 370px;
+  padding: 50px 36px;
+  padding-bottom: 30px;
+  outline: auto;
+}
+
+.clients-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.clients-item-desc {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.clients-user {
+  margin-top: auto;
+  align-items: center;
+}
+
+.client-avatar {
+  flex-shrink: 0;
+  width: 67px;
+  margin-right: 17px;
+}
+
+.clients-name {
+  margin-bottom: 5px;
 }
