@@ -185,7 +185,6 @@ body {
 }
 
 .section-title {
-  text-align: center;
   color: #1C1C1C;
   font-size: 36px;
   font-style: normal;
@@ -243,18 +242,27 @@ body {
 
 /* articles */
 
+.articles {
+  border-bottom: 1px solid #dadada;
+}
+
 .articles-list {
   flex-wrap: wrap;
 }
 
 .articles-item {
   width: 570px;
-  outline: auto;
   margin-bottom: 30px;
 }
 
 .articles-item:not(:nth-child(2n)) {
   margin-right: 30px;
+}
+
+.blog-preview {
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #E4E4E4;
 }
 
 .blog-preview-image {
@@ -268,25 +276,46 @@ body {
 .blog-preview-time {
   display: block;
   margin-bottom: 3px;
+  color: #787878;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .blog-preview-title {
   margin: 0;
   margin-bottom: 15px;
+  color: #1C1C1C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
 }
 
 .blog-preview-desc {
   margin: 0;
+  color: #787878;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 210px;
 }
 
 /* clients */
+
+.clients {
+  border-bottom: 1px solid #dadada;
+}
 
 .clients-item {
   flex-direction: column;
   width: 370px;
   padding: 50px 36px;
   padding-bottom: 30px;
-  outline: auto;
+  border-radius: 5px;
+  border: 1px solid #E4E4E4;
 }
 
 .clients-item:not(:nth-child(3n)) {
@@ -294,6 +323,11 @@ body {
 }
 
 .clients-item-desc {
+  color: #787878;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -301,6 +335,8 @@ body {
 .clients-user {
   margin-top: auto;
   align-items: center;
+  border-top: 1px solid #E4E4E4;
+  padding-top: 28px;
 }
 
 .client-avatar {
@@ -309,11 +345,33 @@ body {
   margin-right: 17px;
 }
 
+.client-avatar img {
+  border-radius: 100%;
+  border: 2px solid #3172b9;
+}
+
 .clients-name {
+  color: #1C1C1C;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
   margin-bottom: 5px;
 }
 
+.clients-post {
+  color: #787878;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
 /* contacts */
+
+.contacts {
+  border-bottom: 1px solid #dadada;
+}
 
 .contacts-address {
   font-style: normal;
@@ -322,7 +380,21 @@ body {
 .contacts-item {
   flex-direction: column;
   width: 370px;
-  outline: auto;
+  background-repeat: no-repeat;
+  background-size: 29px 29px;
+  padding-top: 48px;
+}
+
+.contacts-item-location {
+  background-image: url('/img/location.svg');
+}
+
+.contacts-item-phone {
+  background-image: url('/img/phone.svg');
+}
+
+.contacts-item-email {
+  background-image: url('/img/black-mail.svg');
 }
 
 .contacts-item:not(:nth-child(3n)) {
@@ -331,15 +403,32 @@ body {
 
 .contacts-item-caption {
   margin-bottom: 30px;
+  color: #1C1C1C;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
 }
 
 .contacts-item-text {
   margin: 0;
+  color: #787878;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  max-width: 215px;
 }
 
-.contacts-item-link:not(:last-child) {
-  margin-bottom: 5px;
+.contacts-item-link {
+  color: #787878;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
 }
+
+
 
 /* footer */
 
@@ -347,9 +436,29 @@ body {
   padding: 42px 0;
 }
 
+.footer-copy {
+  color: #787878;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-link {
+  color: #787878;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .footer-container {
   align-items: center;
   justify-content: space-between;
+}
+
+.footer-nav {
+  margin-right: 56px;
 }
 
 .footer-left,
@@ -363,4 +472,29 @@ body {
 
 .footer-item:not(:last-child) {
   margin-right: 28px;
+}
+
+.social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.social-link-twitter {
+  background-image: url('/img/twitter.svg');
+}
+
+.social-link-linkedin {
+  background-image: url('/img/linkedin.svg');
+}
+
+.social-link-mail {
+  background-image: url('/img/white-mail.svg');
 }
